@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos de Importação | Funil de Vendas</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0e0e0e;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffd700;
+}
+
+p {
+  color: #ddd;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 18px;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.plan {
+  background: #1a1a1a;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255,215,0,0.25);
+}
+
+.plan h3 {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.price {
+  text-align: center;
+  font-size: 38px;
+  color: #25d366;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  background: #25d366;
+  color: #000;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1ebd5a;
+  transform: scale(1.05);
+}
+
+.premium {
+  border: 2px solid #ffd700;
+  transform: scale(1.05);
+}
+
+.highlight {
+  text-align: center;
+  margin: 90px 0;
+  padding: 40px;
+  background: #202020;
+  border-left: 6px solid #ffd700;
+  border-radius: 16px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #aaa;
+  background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <section class="hero reveal">
+    <h1>🚀 QUER IMPORTAR DA CHINA SEM ERRAR?</h1>
+    <p>
+      A maioria perde dinheiro por falta de orientação.
+      Aqui você começa com fornecedores certos, suporte e clareza.
+    </p>
+    <a class="btn" href="https://wa.me/553397036672">Falar no WhatsApp</a>
+  </section>
+
+  <section class="reveal">
+    <h2>ESCOLHA O PLANO IDEAL PARA VOCÊ</h2>
+  </section>
+
+  <section class="plans reveal">
+
+    <div class="plan">
+      <h3>🔵 PLANO BASIC</h3>
+      <div class="price">R$ 8,98</div>
+      <ul>
+        <li>✔ Tutorial até a warehouse</li>
+        <li>✔ Lista inicial de fornecedores</li>
+        <li>✔ Suporte via WhatsApp</li>
+        <li>❌ Sem auxílio de declaração</li>
+        <li>❌ Sem fornecedores por categoria</li>
+      </ul>
+      <a class="btn" href="https://wa.me/553397036672">Começar Agora</a>
+    </div>
+
+    <div class="plan">
+      <h3>🟡 PLANO PLUS</h3>
+      <div class="price">R$ 9,98</div>
+      <ul>
+        <li>✔ Tudo do Basic</li>
+        <li>✔ Fornecedores por categoria (+30)</li>
+        <li>✔ Produtos selecionados</li>
+        <li>✔ Auxílio intermediário de declaração</li>
+        <li>✔ Busca sob demanda</li>
+      </ul>
+      <a class="btn" href="https://wa.me/553397036672">Escolher Plus</a>
+    </div>
+
+    <div class="plan premium">
+      <h3>🔴 PLANO PREMIUM</h3>
+      <div class="price">R$ 19,99</div>
+      <ul>
+        <li>✔ Tudo dos outros planos</li>
+        <li>✔ Fornecedores premium atualizados</li>
+        <li>✔ Auxílio completo de declaração</li>
+        <li>✔ Orientação 1 a 1</li>
+        <li>✔ Suporte prioritário</li>
+        <li>✔ Acompanhamento avançado</li>
+      </ul>
+      <a class="btn" href="https://wa.me/553397036672">Quero o Premium</a>
+    </div>
+
+  </section>
+
+  <section class="highlight reveal">
+    <h2>⭐ EXCLUSIVO DO PREMIUM</h2>
+    <p>
+      Não encontrou o produto que procura?<br>
+      Envie foto, marca ou modelo.<br>
+      Se existir na China, eu encontro para você.
+    </p>
+    <a class="btn" href="https://wa.me/553397036672">Entrar no Premium</a>
+  </section>
+
+</div>
+
+<footer>
+  <p>Serviço educacional e de orientação. Não vendemos produtos.</p>
+  <p>🇨🇳 Uma longa viagem começa com um único passo 🇧🇷</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 80) {
+        el.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
